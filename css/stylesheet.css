@@ -1,0 +1,164 @@
+:root.light { /* light mode */
+    --foreground-colour: #fafafa;
+    --background-colour: #e4e5f1;
+    --text-colour: #000;
+}
+
+:root { /* dark mode */
+    --foreground-colour: #393053;
+    --background-colour: #18122B;
+    --text-colour: #fff;
+}
+
+html, body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-colour);
+    color: var(--text-colour);
+}
+
+img {
+    clip: rect(0px,200px,200px,0px);
+}
+
+h1 {
+    font-size: 2em;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    padding: 1% 0% 1% 1%;
+    width: 99%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20%;
+    background-color: var(--foreground-colour);
+}
+
+.footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 1% 0% 1% 1%;
+    width: 99%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 7.5%;
+    background-color: var(--foreground-colour);
+}
+  
+.navbar h1 {
+    padding: 2%;
+    font-size: 42px;
+}
+
+.navlinks {
+    margin: 0;
+    display: flex;
+    vertical-align: middle;
+    justify-content: center;
+    align-content: center;
+    padding: 1% 0% 0% 1%;
+}
+
+a {
+    color: var(--text-colour);
+    text-decoration: none;
+}
+
+.visit-thame-header {
+    width: auto;
+}
+
+.three-wide {
+    width: calc(100vw - calc(15px * 2) - 40px);
+    min-height: 67vh;
+    max-height: 67vh;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+    margin-right: 0;
+    display:grid;
+    grid-template-columns: 33.333% 33.333% 33.333%;
+    column-gap: 15px;
+}
+
+p {
+    font-size: 2em;
+    padding: 0%;
+}
+
+:root {
+    --star-size: 40px;
+    --star-color: var(--background-colour);
+    --star-background: var(--star-background); /* white on dark mode */
+}
+
+.Stars {
+    --percent: calc(var(--rating) / 5 * 100%);
+    display: inline-block;
+    font-size: var(--star-size);
+    font-family: Times;
+    line-height: 1;
+  }
+
+.Stars::before {
+    content: "★★★★★";
+    background: linear-gradient(90deg, var(--star-background) var(--percent), var(--star-color) var(--percent));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.container{
+    width: calc(100vw - calc(15px * 3) - 40px);
+    min-height: 67vh;
+    max-height: 67vh;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+    margin-right: 0;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    column-gap: 15px;
+}
+
+.button {
+    background-color: var(--background-colour);
+    border: none;
+    color: var(--text-colour);
+    border-radius: 25px;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    justify-content: center;
+    display: block;
+    font-size: 16px;
+  }
+
+.box{
+    background-color:var(--foreground-colour);
+    height: auto;
+    border-radius:25px;
+    padding: 10px;
+    color: var(--text-colour);
+    text-align: center;
+    word-wrap: normal;
+    font-size: 13px;
+}
+
+.cover-image{
+    min-width: 55%;
+    max-width: 70%;
+    border-radius: 25px;
+}
+
+.thame-logo {
+    stroke: var(--text-colour);
+    fill: var(--text-colour);
+    width: 5.5%;
+}
