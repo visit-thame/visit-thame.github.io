@@ -1,21 +1,9 @@
-:root.light { /* light mode */
-    --foreground-colour: #fafafa;
-    --background-colour: #e4e5f1;
-    --text-colour: #000;
-}
-
-:root { /* dark mode */
-    --foreground-colour: #393053;
-    --background-colour: #18122B;
-    --text-colour: #fff;
-}
-
 html, body {
     font-family: 'Segoe UI', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: var(--background-colour);
-    color: var(--text-colour);
+    background-color: #18122B;
+    color: #fff;
 }
 
 img {
@@ -35,7 +23,7 @@ h1 {
     align-items: center;
     justify-content: center;
     height: 20%;
-    background-color: var(--foreground-colour);
+    background-color: #393053;
 }
 
 .footer {
@@ -48,7 +36,7 @@ h1 {
     align-items: center;
     justify-content: center;
     height: 7.5%;
-    background-color: var(--foreground-colour);
+    background-color: #393053;
 }
   
 .navbar h1 {
@@ -66,7 +54,7 @@ h1 {
 }
 
 a {
-    color: var(--text-colour);
+    color: #fff;
     text-decoration: none;
 }
 
@@ -94,8 +82,8 @@ p {
 
 :root {
     --star-size: 40px;
-    --star-color: var(--background-colour);
-    --star-background: var(--star-background); /* white on dark mode */
+    --star-color: #18122B;
+    --star-background: #fff;
 }
 
 .Stars {
@@ -128,9 +116,9 @@ p {
 }
 
 .button {
-    background-color: var(--background-colour);
+    background-color: #18122B;
     border: none;
-    color: var(--text-colour);
+    color: #fff;
     border-radius: 25px;
     padding: 15px 32px;
     text-align: center;
@@ -141,11 +129,11 @@ p {
   }
 
 .box{
-    background-color:var(--foreground-colour);
+    background-color:#393053;
     height: auto;
     border-radius:25px;
     padding: 10px;
-    color: var(--text-colour);
+    color: #fff;
     text-align: center;
     word-wrap: normal;
     font-size: 13px;
@@ -158,7 +146,7 @@ p {
 }
 
 .thame-logo {
-    stroke: var(--text-colour);
-    fill: var(--text-colour);
+    stroke: #fff;
+    fill: #fff;
     width: 5.5%;
 }
